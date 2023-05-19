@@ -1,4 +1,4 @@
-const API_KEY = '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';
+const API_KEY = 'key here';
 
 
 
