@@ -40,7 +40,8 @@ app.get('/api/get-api-key', (req, res) => {
     res.json({ apiKey });
   });
 
+  const port = process.env.PORT || 6500;
 
-app.listen(6500, () => {
-  console.log('Server is running on port 6500');
-});
+  app.listen(port, () => {
+    console.log(`Server is running on port ${port}`);
+  });
