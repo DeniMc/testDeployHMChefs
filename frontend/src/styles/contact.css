@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   /* background: rgb(177, 250, 177); */
+}
+
+section {
+    height: 90vh;
+    width: 100wh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../../images/HomeMeal_Circle_Only.svg') no-repeat bottom center/cover;
+    opacity: 0.9;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    min-width: 550px;
+    max-width: 600px;
+    /* border: 1px solid black; */
+    align-items: center;
+    margin: auto;
+   
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: inset -5px -5px rgba(0,0,0,0.5);
+    border-radius: 25px;
+  
+}
+
+input {
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    opacity: 0.9;
+    padding-left: 2rem;
+    border-radius: 1rem;
+    width: 90%;
+    height: 3rem;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+  }
+  
+  #submit{
+      padding: 5px 20px;
+      margin-top: 50px;
+      width: 60%;
+      height: 2.5rem;
+      background-color: #fe676a;
+      box-shadow: inset -3px -3px rgba(0,0,0,0.5);
+      color: white;
+      font-weight: 900;
+      border: none;
+      outline: none;
+      border-radius: 20px;
+      font-size: 1.2rem;
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 20px;
+  }
+  
+  #submit:hover{
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.1);
+      color: white;
+  }
+  
+  ::placeholder {
+      color: white;
+      opacity: 0.7;
+  }
+
+  h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 5px 5px 15px black;
+    text-align: center;
+  }

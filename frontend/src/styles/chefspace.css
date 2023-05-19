@@ -1,0 +1,359 @@
+/* current user signpost */
+
+#currentUser {
+    background-color: #fff;
+    font-family: 'Raleway', 'Lora', sans-serif;
+    margin-right: 15px;
+    color: #00aa9f;
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 0.7rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px black;
+}
+
+#currentUser:hover {
+    background-color: #00aa9f;
+    color: #fff;
+    box-shadow: 5px 5px 10px white;
+}
+
+
+/* add meals slider */
+.meals-slide-container {
+    max-width: 1800px;
+    width: 100%;
+    padding: 40px 0;
+    margin-top: 3%;
+    margin-bottom: 10%;
+}
+
+
+.meals-card{
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 900px;
+    margin-left: 30px;
+    border-radius: 25px;
+    background-color: #2cb484;
+}
+
+.meals-image-content,
+.meals-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 14px;
+}
+
+.meals-image-content {
+    color: #FFF;
+}
+
+.meals-card-content {
+    background-color: #2cb484;
+}
+
+.meals-card-image {
+    position: relative;
+    height: 550px;
+    width: 280px;
+    border-radius: 2%;
+    background: #FFF;
+    padding: 3px;
+}
+
+.meals-card-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2%;
+    border: 4px solid #2cb484;
+} 
+
+.meals-overlay {
+    z-index: -1;
+    background-color: #2cb484;
+}
+/* ********************************* */
+
+/* edit meals slider */
+
+.edit-meals-slide-container {
+    max-width: 1800px;
+    width: 100%;
+    padding: 40px 0;
+    margin-top: 3%;
+    margin-bottom: 10%;
+}
+
+
+#edit-meals-card{
+    max-width: 600px;
+    height: 700px;
+    margin-left: 30px;
+    border-radius: 25px;
+    background-color: #2cb484;
+}
+
+.edit-meals-image-content,
+.meals-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 10px 14px; */
+}
+
+.edit-meals-image-content {
+    color: #FFF;
+}
+
+.edit-meals-card-content {
+    background-color: #2cb484;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+}
+
+.edit-meals-card-image {
+    position: relative;
+    height: 350px;
+    
+    border-radius: 2%;
+    background: #FFF;
+    padding: 3px;
+}
+
+.edit-meals-card-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 2%;
+    border: 4px solid #2cb484;
+} 
+
+
+/* subheading h3s */
+
+.sub-heads {
+    text-align: center;
+    font-weight: 700;
+    color: black;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px #00aa9f;
+    font-family: "Raleway", sans-serif; 
+}
+
+/* Creating Menu Style */
+
+.creating-menu-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 3%;
+}
+.creating-menu-content li {
+    list-style-type: circle;
+}
+
+.creating-menu-content h2, h3 {
+    text-align: center;
+    font-weight: 700;
+    color: black;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px #00aa9f;
+    font-family: "Raleway", sans-serif; 
+}
+
+.creating-menu-content h5 {
+    font-size: 2.5rem;
+    color: red;
+    font-weight: 800;
+}
+
+
+/* ChatGPT Meal description generator buttons */
+
+.homeMealGPT-router {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2rem;
+}
+
+.homeMealGPT-router p {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #2cb484;
+    text-shadow: 5px 5px 5px black;
+}
+
+.HomeMealGPT {
+    margin: 3%;
+    font-size: 2rem;
+    font-weight: 900;
+    color: black;
+    width: 50%;
+    background-color: #00aa9f;
+    box-shadow: 5px 5px 5px black;
+    text-align: center;
+    padding: 1.2rem;
+    border-radius: 3rem;
+}
+
+.HomeMealGPT a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 968px) {
+    .HomeMealGPT {
+    font-size: 2rem;
+    width: 60%;
+    }
+    }
+
+    @media screen and (max-width: 600px) {
+        .HomeMealGPT {
+        font-size: 1.5rem;
+        width: 80%;
+        }
+        }
+    
+
+
+.HomeMealGPT:hover {
+    background-color: #fe676a;
+    box-shadow: 5px 5px 5px black;
+} 
+.HomeMealGPT a:hover {
+   color: black;
+    
+} 
+
+.pdf-container {
+    width: 90%;
+    margin-top: 3%;
+    margin-left: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#adding-meals-pdf {
+    margin: 0 auto;
+    margin-top: 3%;
+}
+#chef-profile-pdf{
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+#profileGPT {
+    margin-bottom: 50%;
+}
+
+.post-landing-page {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    min-height: 100vh;
+    max-height: 300vh;
+    /* background-color: #a6fac2; */
+}
+
+.post-main {
+    padding: 5%;
+}
+
+/* Marketing section: route to Flyer Order Form */
+
+.flyer-form-link {
+    display: flex;
+    justify-content: space-between;
+    background-color: #2cb484;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;  
+}
+.flyer-form-link:hover {
+    background-color: #00aa9f;
+}
+
+.flyer-form-link p {
+    color: red;
+    font-size: 1.6rem;
+}
+
+@media screen and (max-width:800px){
+    .flyer-form-link p  {
+        font-size: 1.2em;
+    }
+}
+.flyer-form-link a {
+    margin-top: 2em;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+}
+
+.flyer-form-link img {
+    width: 3rem;
+    height: 5rem;
+}
+
+#section4-post {
+/* align-items: flex-start; */
+display: block;
+}
+
+#section4-post h1 {
+    text-align: center;
+}
+
+#final-buttons {
+    margin-bottom: 15vh;
+}
+
+
+.orders-delivery {
+    margin-left: 5%;
+    margin-right: 10%;
+}
+
+ul {
+    margin-left: 5%;
+}
+
+ul li {
+    list-style-type: circle;
+}
+
+.orders-delivery ul li {
+    list-style-type: circle;
+}
+
+.post-main {
+    background: url(../../images/chef2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.post-main h1{
+
+    color: #fff;
+    text-shadow: 3px 2px 2px #00aa9f;
+
+}
+ 

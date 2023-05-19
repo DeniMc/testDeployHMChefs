@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="../styles/GPT.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript ChatGPT Clone</title>
+  </head>
+  <body>
+    <section class="side-bar">
+      <button id="newProfile" onclick="clearInputs()">New Profile</button>
+      <div class="history"></div>
+        <p id="signature">Made by DeniMcDesigns @HomeMeal</p>
+    </section>
+    <main>
+      <h1>HomeMealGPT</h1>
+      <div class="login-form">
+        <button class="header-home-btn" id="header-home-btn"><a href="../index.html">HomePage</a></button>
+      </div>
+      <form id="profileForm">
+          <label for="chef-name">Chef Name:</label>
+          <input type="text" id="chef-name" name="chef-name"><br><br>
+          
+          <label for="comeFrom">Where are you from?</label>
+          <textarea id="comeFrom" name="comeFrom"></textarea><br><br>
+          
+          <label for="whyCook">Why do you cook?:</label>
+          <textarea id="whyCook" name="whyCook"></textarea><br><br>
+
+          <label for="signatureDish">What are your signature dishes?:</label>
+          <textarea id="signatureDish" name="signatureDish"></textarea><br><br>
+          
+          <button id="promptSubmit" type="button" onclick="displayResult()">Submit</button>
+          
+          <br><br>
+          
+          <label for="result">Prompt Result:</label>
+          <!-- <textarea id="promptResult" class="output" name="result"></textarea> -->
+
+          <div class="bottom-section">
+              <div class="input-container">
+                  <textarea id="promptResult" class="output" name="result"></textarea>
+                <div id="submit"><p>Create Chefs Profile <span>➤</span></p></div>
+              </div>
+            </div>
+
+
+          <p id="chefDescription"></p>
+         
+        </form>
+    </main>
+    <script type=’text/javascript’ src=’config.js’></script>
+    <script src="../scripts/profile.js"></script>
+  </body>
+</html>

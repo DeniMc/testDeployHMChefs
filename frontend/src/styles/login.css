@@ -1,0 +1,139 @@
+/* (A) WHOLE PAGE */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+	font-family: Lora, Helvetica, sans-serif;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	
+  }
+
+  body {
+    background: url('../../images/chef3.jpg') no-repeat bottom center/cover;
+    /* background: url('HMLogoFullBolder.png') no-repeat center center/cover; */
+    height: 100vh;
+}
+
+.background-logo{
+    height: 100vh;
+    background: url('../../images/HomeMeal_Circle_Only.svg') no-repeat bottom center/cover;
+    opacity: 0.7;
+}
+
+/* Login Form */
+
+.form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 400px;
+    /* border: 1px solid black; */
+    align-items: center;
+    margin: auto;
+   
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: inset -5px -5px rgba(0,0,0,0.5);
+    border-radius: 25px;
+}
+
+.form h1 {
+    color: white;
+    font-size: 2rem;
+    border-bottom: 4px solid rgba(255, 255, 255, 0.5);
+    margin: 50px;
+}
+
+/* Boxes */
+
+.box {
+    padding: 12px;
+    margin: 20px;
+    width: 65%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: inset -3px -3px rgba(0,0,0,0.5);
+    color: white;
+    font-size: 1rem;
+}
+
+label {
+  font-size: 2rem;
+  color: #fff;
+}
+
+input {
+  background-color: rgba(0,0,0,0.3);
+  color: #fff;
+  opacity: 0.9;
+  padding-left: 2rem;
+  border-radius: 1rem;
+  width: 60%;
+  height: 2rem;
+  font-size: 1.2rem;
+}
+
+#submit{
+    padding: 5px 20px;
+    margin-top: 50px;
+    width: 60%;
+    height: 2.2rem;
+    background-color: rgba(0,0,0,0.5);
+    box-shadow: inset -3px -3px rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+}
+
+#submit:hover{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+::placeholder {
+    color: white;
+    opacity: 0.7;
+}
+
+.header-home-btn {
+  position: fixed;
+  top: 3rem;
+  left: 3rem;
+  z-index: 200;
+  background-color: #fff;
+  font-family: 'Raleway', 'Lora', sans-serif;
+  margin-right: 15px;
+  color: #00aa9f;
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding: 0.7rem;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 10px black;
+}
+
+.header-home-btn a {
+  text-decoration: none;
+  color: #00aa9f;
+}
+
+.header-home-btn a:hover {
+  color: #fff;
+}
+
+.header-home-btn:hover {
+  background-color: #00aa9f;
+  color: #fff;
+  box-shadow: 5px 5px 10px white;
+}
+ 

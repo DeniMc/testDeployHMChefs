@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page Demo</title>
+    <link href="./styles/login.css" rel="stylesheet">
+  </head>
+  <body>
+
+  <div class="background-logo"></div>
+  
+   
+<section id="login-box">
+  <button class="header-home-btn" id="header-home-btn"><a href="./index.html">HomePage</a></button>
+
+    <form id="loginForm" class="form" >
+      <h1>LOGIN</h1>
+      <label for="user">User</label>
+      <input type="username" id="username" placeholder=" enter username" name="user" required>
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter password" name="password" required>
+      <input type="submit" value="Sign In" id="submit">
+    </form>
+
+   
+
+    <script>
+      document.getElementById("loginForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        // Validate the credentials and set login state/token in localStorage/sessionStorage
+        if (username === "HomeMealChef" && password === "chef123") {
+        localStorage.setItem("isLoggedIn", true);
+        window.location.href = "chefspace.html";
+        } else {
+        alert("Invalid credentials. Please try again.");
+        }
+      });
+      </script>
+    
+      </section>
+  </body>
+</html>

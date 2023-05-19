@@ -1,0 +1,96 @@
+.contacts-page {
+    width: 100%;
+    min-height: 80vh;
+    max-height: 250vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url(../../images/HMLogoYellow.svg);
+    background-size: cover;
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+.pages-heading {
+    color: #fff;
+    text-shadow: 5px 5p 5px black;
+   
+}   
+
+
+
+.header-home-btn {
+    background-color: #fff;
+    font-family: 'Raleway', 'Lora', sans-serif;
+    margin-right: 15px;
+    color: #00aa9f;
+    font-size: 1.2rem;
+    font-weight: 800;
+    padding: 0.7rem;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 10px black;
+}
+
+.header-home-btn a {
+    text-decoration: none;
+    color: #00aa9f;
+}
+
+#header-home-btn a {
+    text-decoration: none;
+   
+}
+
+.header-home-btn a:hover {
+    color: #fff;
+}
+
+.header-home-btn:hover {
+    background-color: #00aa9f;
+    color: #fff;
+    box-shadow: 5px 5px 10px white;
+}
+
+.employee-contact-card {
+    display: flex;
+    flex-direction: row;
+    
+    min-height: 300px;
+    max-height: 600px;
+    max-width: 900px;
+    min-width: 380px;
+    border: 1px solid #2cb484;
+    border-radius: 3rem;
+}
+
+@media screen and (max-width: 750px) {
+    .employee-contact-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.contact-profile-pic {
+    height: 300px;
+    width: 300px;
+    background-size: cover;
+    border-radius: 3rem;
+}
+
+.contact-profile-pic img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+
+.contact-info {
+    padding: 5%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    opacity: 0.8;
+}
