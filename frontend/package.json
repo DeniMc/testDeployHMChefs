@@ -8,13 +8,14 @@
     "doc": "docs"
   },
   "scripts": {
-    "build": "webpack --config webpack.config.js",
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "copyfiles -u 1 src/css/*.css dist/css",
+    "build:js": "node build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "webpack": "^5.82.1",
-    "webpack-cli": "^5.1.1"
+    "copyfiles": "^2.4.1"
   }
 }
